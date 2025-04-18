@@ -43,6 +43,10 @@ def adaptive_gamma_correction(image_path, target=0.5, color_space='YCbCr', metho
     else:  # 二分法
         gamma = calculate_gamma_binary(y_normalized, target)
 
+
+
+
+
     # 应用Gamma校正
     y_corrected = (y_normalized ** gamma) * (Lmax - Lmin) + Lmin
     y_corrected = np.clip(y_corrected, 0, 255).astype(np.uint8)
