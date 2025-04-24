@@ -63,19 +63,24 @@ $\frac{1}{N} \sum_{i=1}^{N} Y_i^{\gamma} = \mu_{target}$
 
 原图平均亮度为0.7695，标准差为0.3295。使用二分法计算得到的Gamma值为10.0000，校正后的平均亮度为0.6307，标准差为0.3938。由于原图亮度远高于目标亮度（0.5），算法使用了最大Gamma值对图像进行了暗化处理。
 
-![Gamma校正对比](gamma_results/comparison.png)
+<div style="text-align: center;">
+    <img src="gamma_results/comparison.png" alt="Gamma校正对比" style="width:70%; max-width:600px;" />
+</div>
 
 #### 2. Gamma校正曲线
 
 Gamma值为10时的校正曲线表明这是一个强烈的暗化操作，低亮度区域被显著压缩，高亮度区域被大幅降低。
-
-![Gamma校正曲线](gamma_results/gamma_curve.png)
+<div style="text-align: center;">
+    <img src="gamma_results/gamma_curve.png" alt="Gamma校正曲线" style="width:50%; max-width:400px;" />
+</div>
 
 #### 3. 亮度直方图分析
 
 校正前后的亮度直方图对比显示，校正后的图像亮度整体下降，分布更加集中于中低亮度区域。
 
-![亮度直方图对比](gamma_results/histogram_comparison.png)
+<div style="text-align: center;">
+    <img src="gamma_results/histogram_comparison.png" alt="亮度直方图对比" style="width:70%; max-width:600px;" />
+</div>
 
 #### 4. 不同Gamma计算方法对比
 
@@ -88,7 +93,9 @@ Gamma值为10时的校正曲线表明这是一个强烈的暗化操作，低亮�
 - 牛顿法：通常3-5次迭代即可收敛
 - 公式法：仅需一次计算，但可能不精确
 
-![不同计算方法对比](gamma_results/method_comparison.png)
+<div style="text-align: center;">
+    <img src="gamma_results/method_comparison.png" alt="不同计算方法对比" style="width:70%; max-width:600px;" />
+</div>
 
 #### 5. 不同目标亮度对比
 
@@ -99,7 +106,9 @@ Gamma值为10时的校正曲线表明这是一个强烈的暗化操作，低亮�
 
 对于不同光照条件的图像，需要选择合适的目标亮度值以获得最佳效果。
 
-![不同目标亮度对比](gamma_results/target_comparison.png)
+<div style="text-align: center;">
+    <img src="gamma_results/target_comparison.png" alt="不同目标亮度对比" style="width:70%; max-width:600px;" />
+</div>
 
 #### 6. 误差分析
 
